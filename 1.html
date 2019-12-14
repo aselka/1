@@ -2,34 +2,10 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Задание 1</title>
     <meta charset="utf-8" />    
+    <script src="1.js"></script>
 </head>
 <body>
-    <script type="text/javascript"> 
-	(function() {
-		var str = "У попа была собака";
-		var separator = ["?", "!", ":", ";", ",", ".", " ", "\t"];
-		var arr = str.split(''), letters = {}, start = 0, words = [], result;
-		arr.forEach(function (letter, i) {
-			if (separator.indexOf(letter) != -1) {
-				words.push(str.substr(start, i - start));
-				start = i + 1;
-			}
-		});
-		words.push(str.substr(start));
-		words.forEach(function (word) {
-			word.split('').forEach(function (letter, i) {
-				if (!letters[letter] && -1 != word.indexOf(letter, i + 1)) {
-					letters[letter] = 1;
-				}
-			});
-		});
-		result = arr.filter(function (v) {
-			return !letters[v];
-		}).join('');
-		alert(result);
-	})();
-	</script>
 </body>
 </html>
