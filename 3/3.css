@@ -1,0 +1,13 @@
+select {
+   width: 400px;
+   height: 200px;
+}
+
+option {
+  font-size: 12pt;
+}
+
+table {
+  display: inline;
+  vertical-align: top;
+}
