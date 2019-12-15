@@ -15,22 +15,22 @@
     <table>
 	   <tr>
         <td>
-          <input id="right" type="button" value=">" onclick="selectedOptions(this);"/>
+          <input id="right" type="button" value=">" onclick="move(this);"/>
         </td>
       </tr>
       <tr>
         <td>
-          <input id="left" type="button" value="<" onclick="selectedOptions(this, true);"/>
+          <input id="left" type="button" value="<" onclick="move(this, true);"/>
         </td>
       </tr>
       <tr>
         <td>
-          <input id="all_right" type="button" value=">>" onclick="allOptions(this);"/>
+          <input id="all_right" type="button" value=">>" onclick="moveAll(this);"/>
         </td>
       </tr>
       <tr>
         <td>
-          <input id="all_left" type="button" value="<<" onclick="allOptions(this, true);"/>
+          <input id="all_left" type="button" value="<<" onclick="moveAll(this, true);"/>
         </td>
       </tr>
     </table>
