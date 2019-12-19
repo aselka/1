@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Page 1</h1>
+
+<img src="img/1.jpg" width="500" height="500" alt="1">
+<div class="time-block">
+    <div id="time"></div>
+    <button id="pause" onclick="Pause()"> || </button>
+    <button id="previous" onclick="toPreviousPage()"> << </button>
+    <button id="next" onclick="toNextPage()"> >> </button>
+</div>
+
+<script src="script.js"></script>
+<script type="text/javascript">
+    setPage(1);
+    countDown();
+</script>
+</body>
+</html>
